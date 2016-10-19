@@ -1,4 +1,4 @@
-package com.mevv.vhttp.vhttp.core;
+package com.mevv.vhttp.vhttp.core.exception;
 
 import com.mevv.vhttp.util.TipUtil;
 
@@ -7,6 +7,7 @@ import com.mevv.vhttp.util.TipUtil;
  */
 
 public class ApiException extends RuntimeException {
+
 
     public ApiException(int resultCode, String errorMsg) {
         this(getApiExceptionMessage(resultCode, errorMsg));
@@ -25,15 +26,9 @@ public class ApiException extends RuntimeException {
      * @return
      */
     private static String getApiExceptionMessage(int code, String errorMsg) {
-        String message = "";
-        switch (code) {
-            case -100:
-                TipUtil.showToast(errorMsg);
-                break;
-            default:
-                message = "未知错误";
-                break;
-        }
+        //TODO ErrorEngine 待处理
+        String message = code+"==>"+errorMsg;
+        TipUtil.showToast(message);
         return message;
     }
 }

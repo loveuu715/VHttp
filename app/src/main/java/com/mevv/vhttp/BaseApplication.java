@@ -76,7 +76,7 @@ public class BaseApplication extends Application {
     }
 
     public void exit() {
-//        ActivityManager.getInstances().finishAll();
+//        ActManager.getInstances().finishAll();
 //        System.exit(0);
     }
 }

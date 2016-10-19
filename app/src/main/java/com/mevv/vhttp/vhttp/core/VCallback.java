@@ -7,9 +7,5 @@ package com.mevv.vhttp.vhttp.core;
 public interface VCallback<T> {
     void onSuccess(T result);
 
-    void onError(int errorCode, String errorMsg);
-
-    void onEmpty();
-
-    void noNetworkError(String msg);
+    void onFailure(Throwable e);
 }

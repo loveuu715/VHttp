@@ -1,4 +1,4 @@
-package com.mevv.vhttp.vhttp.core;
+package com.mevv.vhttp.vhttp.service;
 
 import com.mevv.vhttp.vhttp.entity.BannerEntity;
 import com.mevv.vhttp.vhttp.response.Resp;
@@ -19,4 +19,5 @@ public interface ObjectApi {
 
     @GET("Index/getCarouselImg")
     Observable<Resp<List<BannerEntity>>> getBannerList(@QueryMap Map<String, String> params);
+
 }

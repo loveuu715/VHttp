@@ -8,18 +8,18 @@ import java.util.Stack;
  * Created by VV on 2016/9/21.
  * Activity任务栈管理
  */
-public class ActivityManager {
-    private static ActivityManager sActivityManager;
+public class ActManager {
+    private static ActManager sActivityManager;
     private Stack<Activity> mStack = new Stack<Activity>();
 
-    private ActivityManager() {
+    private ActManager() {
     }
 
-    public static ActivityManager getInstances() {
+    public static ActManager getInstances() {
         if (sActivityManager == null) {
-            synchronized (ActivityManager.class) {
+            synchronized (ActManager.class) {
                 if (sActivityManager == null)
-                    sActivityManager = new ActivityManager();
+                    sActivityManager = new ActManager();
             }
         }
         return sActivityManager;

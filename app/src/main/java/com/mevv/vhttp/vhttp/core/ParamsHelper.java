@@ -10,8 +10,8 @@ import java.util.Map;
  *
  */
 
-public class ApiHelper {
-    public static final String TAG = "ApiHelper";
+public class ParamsHelper {
+    public static final String TAG = "ParamsHelper";
     public static Gson sGson ;
     private static LinkedHashMap<String, String> sMap ;
     static{
@@ -21,7 +21,7 @@ public class ApiHelper {
     public static Map getBasicMap(){
         sMap = new LinkedHashMap<>();
         //TODO 添加自己的必须参数
-        sMap.put("token", "1ddfddfc2d97371ca7db781d55226ccc");
+        sMap.put("token", "5d01321caea90573a25cd075ba440d6a");
         sMap.put("secret_key", "rA21VeE8347bScsuIDNq");
         sMap.put("adcode", "440300");
         sMap.put("user_type", "1");

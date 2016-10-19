@@ -1,4 +1,8 @@
-package com.mevv.vhttp.vhttp.core;
+package com.mevv.vhttp.vhttp.core.api;
+
+import com.mevv.vhttp.vhttp.core.RetrofitFactory;
+import com.mevv.vhttp.vhttp.service.ObjectApi;
+import com.mevv.vhttp.vhttp.service.StringApi;
 
 /**
  * Created by VV on 2016/10/14.
